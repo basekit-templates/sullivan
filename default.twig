@@ -1,0 +1,38 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- Container -->
+<div class="container">
+
+    <!-- Page Content -->
+    <section class="template-content">
+
+        <!-- Template Widgets -->
+
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+
+        {{widget('extendednavigation', 'navigation', {"align":"left"})|raw}}
+
+        {{widget('feature', 'featurehome', {
+            "header": "profile",
+            "defaultBgImg": asset('images/feature.jpg'),
+            'positionTopPercentage': '0',
+            'showBtn': true,
+            buttonText: "Lorem Ipsum"
+        })|raw}}
+
+        <!-- End Template Widgets -->
+
+        <!-- Main Widget Zone -->
+        {{zone('main')|raw}}
+
+    </section>
+    <!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+{% endblock %}
