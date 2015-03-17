@@ -2,41 +2,42 @@
 
 {% block content %}
 
-<header class="template-header">
+	<header class="template-header">
 
-	<div class="container">
+		<div class="container">
 
-		{{widget('logo', 'headerlogo', {
-			"defaultlogo": asset('images/logo.png')
-		})|raw}}
+			{{widget('logo', 'headerlogo', {
+				"defaultlogo": asset('images/logo.png')
+			})|raw}}
 
-		{{widget('companyname', 'headercompanyname', {
-			"business": "profile"
-		})|raw}}
+			{{widget('companyname', 'headercompanyname', {
+				"business": "profile"
+			})|raw}}
 
-		{{widget('extendednavigation', 'headernavigation', {
-			"align":"left"
-		})|raw}}
+			{{widget('extendednavigation', 'headernavigation', {
+				"align":"left"
+			})|raw}}
 
-		{{widget('line', 'headerline', {})|raw}}
+			{{widget('line', 'headerline', {})|raw}}
 
-	</div>
+		</div>
+
+	</header>
 
 	{{widget('feature', 'headerfeature', {
 		"header": "profile",
-		"defaultBgImg": asset('images/feature.jpg'),
+		"defaultBgImg": asset('images/feature.png'),
 		'positionTopPercentage': '0',
 		'showBtn': true,
 		buttonText: "Lorem Ipsum"
 	})|raw}}
 
-</header>
 
 
 	<section class="template-content">
 
 		{{widget('image', 'sidebarimage', {
-			'src': asset('/images/feature.jpg')
+			'src': asset('/images/sidebar.jpg')
 		})|raw}}
 
 		<div class="container">

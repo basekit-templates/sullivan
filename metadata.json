@@ -15,7 +15,7 @@
             "color4":"#676767",
             "color5":"#676767",
             "color6":"#FFFFFF",
-            "color7":"#C67470"
+            "color7":"#C03F3A"
         }
     },
     "fontSwatch": {
@@ -68,8 +68,8 @@
             "color": "@color-swatch6",
             "color-hover": "@color-swatch6",
             "letter-spacing": "inherit",
-            "background-color": "transparent",
-            "background-color-hover": "fadeout(@color-swatch6, 80%)"
+            "background-color": "@color-swatch7",
+            "background-color-hover": "lighten(@color-swatch7, 10%)"
          },
         "font7": {
             "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",

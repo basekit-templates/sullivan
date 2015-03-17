@@ -15,6 +15,17 @@
 @import "@{templateLocal}/less/plugin-menu.less";
 @import "@{templateLocal}/less/plugin-ecommerce.less";
 
+// Mixins
+// ------
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
 
 // Template Styles
 // ---------------
@@ -35,6 +46,31 @@ input, textarea, button, .button {
 }
 
 
+// Header
+.template-header {
+	background-color: @color-swatch7;
+	.container {
+		padding: 0;
+	}
+	.line__rule {
+		margin: 0;
+		background-color: fadeout(@color-swatch6, 90%);
+		height: 1px;
+	}
+}
+
+// Feature
+.feature__background-image {
+	background-size: 100% auto;
+	background-size: cover;
+	padding: 6em 0;
+}
+
+.widget__feature {
+	.gradient(@color-swatch7, @color-swatch2);
+}
+
+
 // Fixed image
 .template-content {
 	position: relative;
@@ -47,5 +83,8 @@ input, textarea, button, .button {
 		+ .container {
 			padding-right: 30%;
 		}
+	}
+	figure {
+		margin: 0;
 	}
 }
