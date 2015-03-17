@@ -2,37 +2,75 @@
 
 {% block content %}
 
-<!-- Container -->
-<div class="container">
+<header class="template-header">
 
-    <!-- Page Content -->
-    <section class="template-content">
+	<div class="container">
 
-        <!-- Template Widgets -->
+		{{widget('logo', 'headerlogo', {
+			"defaultlogo": asset('images/logo.png')
+		})|raw}}
 
-        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+		{{widget('companyname', 'headercompanyname', {
+			"business": "profile"
+		})|raw}}
 
-        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+		{{widget('extendednavigation', 'headernavigation', {
+			"align":"left"
+		})|raw}}
 
-        {{widget('extendednavigation', 'navigation', {"align":"left"})|raw}}
+		{{widget('line', 'headerline', {})|raw}}
 
-        {{widget('feature', 'featurehome', {
-            "header": "profile",
-            "defaultBgImg": asset('images/feature.jpg'),
-            'positionTopPercentage': '0',
-            'showBtn': true,
-            buttonText: "Lorem Ipsum"
-        })|raw}}
+	</div>
 
-        <!-- End Template Widgets -->
+	{{widget('feature', 'headerfeature', {
+		"header": "profile",
+		"defaultBgImg": asset('images/feature.jpg'),
+		'positionTopPercentage': '0',
+		'showBtn': true,
+		buttonText: "Lorem Ipsum"
+	})|raw}}
 
-        <!-- Main Widget Zone -->
-        {{zone('main')|raw}}
+</header>
 
-    </section>
-    <!-- End Page Content -->
 
-</div>
-<!-- End Container -->
+	<section class="template-content">
+
+		{{widget('image', 'sidebarimage', {
+			'src': asset('/images/feature.jpg')
+		})|raw}}
+
+		<div class="container">
+
+			{{zone('main')|raw}}
+
+		</div>
+
+	</section>
+
+
+	<footer class="template-footer">
+
+		<div class="container">
+
+			{{widget('line', 'footerline', {})|raw}}
+
+			{{widget('logo', 'footerlogo', {
+				"defaultlogo": asset('images/logodark.png')
+			})|raw}}
+
+			{{widget('profile', 'footerprofile1', {
+				"profileType":"strapline",
+				"strapline":"profile"
+			})|raw}}
+
+			{{widget('profile', 'footerprofile2', {
+				"profileType":"copyright",
+				"copyright":"profile"
+			})|raw}}
+
+		</div>
+
+	</footer>
+
 
 {% endblock %}
