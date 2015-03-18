@@ -21,9 +21,19 @@
 
 			</div>
 
+			{{widget('line', 'headerline', {})|raw}}
+
 		</div>
 
 	</header>
+
+	{{widget('feature', 'headerfeature', {
+		"header": "profile",
+		"defaultBgImg": asset('images/feature.png'),
+		'positionTopPercentage': '0',
+		'showBtn': true,
+		buttonText: "Lorem Ipsum"
+	})|raw}}
 
 	<section class="template-content">
 

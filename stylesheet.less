@@ -59,6 +59,52 @@ input, textarea, button, .button {
 	}
 }
 
+.container--flexbox {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	[data-widget-type="extendednavigation"] {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+}
+
+
+// Navigation
+.navigation-body {
+	position: relative;
+}
+@media @tablet {
+	.navigation-list {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background-color: @font-swatch6-background-color;
+	}
+}
+
+// Logo
+.logo-image {
+	padding: 20px;
+	@media @tablet {
+		padding-left: 0;
+	}
+}
+
+
 // Feature
 .feature__background-image {
 	background-size: 100% auto;
@@ -80,11 +126,34 @@ input, textarea, button, .button {
 		bottom: 0;
 		right: 0;
 		width: 30%;
+		background-color: @color-swatch2;
+		z-index: -2;
+		.imagewidget {
+			.gradient(fadeout(@color-swatch2, 100%), fadeout(@color-swatch2, 0%));
+		}
+		img {
+			z-index: -1;
+			position: relative;
+			width: 100%;
+		}
 		+ .container {
-			padding-right: 30%;
+			padding-right: 25%;
+		}
+		figure {
+			margin: 0;
 		}
 	}
-	figure {
+}
+
+
+// Footer
+.container--main {
+	padding-bottom: 0;
+}
+.template-footer--line {
+	.line__rule {
 		margin: 0;
+		background-color: fadeout(@color-swatch5, 70%);
+		height: 1px;
 	}
 }
