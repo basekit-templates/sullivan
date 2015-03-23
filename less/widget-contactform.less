@@ -1,0 +1,67 @@
+// ------------
+// contact form
+// ------------
+
+// Legend
+legend {
+	.heading--2;
+	margin-bottom: .2em;
+}
+
+// All inputs
+input[type="search"],
+input[type="email"],
+input[type="password"],
+.input--single-line,
+.input--search,
+textarea {
+	padding: .8em 1.4em;
+	border: 1px solid darken(@color-swatch1, 5%);
+	background: lighten(@color-swatch1, 12%);
+	border-radius: 0;
+	transition: .2s;
+	&:hover {
+		border-color: darken(@color-swatch1, 15%);
+	}
+	&:focus {
+		background: lighten(@color-swatch1, 20%);
+		border-color: darken(@color-swatch1, 15%);
+		box-shadow: none;
+	}
+}
+
+// All buttons
+button,
+button.button {
+	position: relative;
+	transition: .2s;
+	padding: .8em 1.4em;
+	-webkit-font-smoothing: antialiased;
+	&:before,
+	&:after {
+		content: "\00a0";
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 2em;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		bottom: 0;
+		padding: inherit;
+		margin: 0;
+	}
+	&:before {
+		background: darken(@color-swatch3, 10%);
+	}
+	&:after {
+		content: "\F105";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .4s alternate ease infinite;
+	}
+
+}
+
+@-webkit-keyframes bounceright {
+	from { text-indent: 0; }
+	to   { text-indent: .2em; }
+}
