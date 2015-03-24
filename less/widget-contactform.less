@@ -16,17 +16,39 @@ input[type="password"],
 .input--search,
 textarea {
 	padding: .8em 1.4em;
-	border: 1px solid darken(@color-swatch1, 5%);
 	background: lighten(@color-swatch1, 12%);
+	box-shadow: inset 0 0 0 1px darken(@color-swatch1, 5%);
+	border: none;
 	border-radius: 0;
 	transition: .2s;
 	&:hover {
-		border-color: darken(@color-swatch1, 15%);
+		background-color: lighten(@color-swatch1, 15%);
+		box-shadow: inset 0 0 0 1px darken(@color-swatch1, 15%);
 	}
 	&:focus {
-		background: lighten(@color-swatch1, 20%);
-		border-color: darken(@color-swatch1, 15%);
-		box-shadow: none;
+		background-color: lighten(@color-swatch1, 20%);
+		box-shadow: inset 0 0 0 1px darken(@color-swatch1, 15%);
 	}
 }
 
+.signupform__form-body,
+.blogsearch__form-body,
+.ecomproductslist__form-body {
+	display: flex;
+	align-items: flex-end;
+	input[type="email"],
+	input[type="search"] {
+		box-shadow: inset 0 0 0 1px @color-swatch3;
+	}
+	.form-group:first-of-type {
+		flex: 1 1 auto;
+	}
+}
+
+.product-filters .input--search {
+	height: auto;
+}
+
+.product-filters .form-group {
+	margin: 0;
+}

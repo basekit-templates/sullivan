@@ -2,37 +2,118 @@
 // buttons
 // ------------
 
+
+// Main button styles
 button,
-button.button {
+.button,
+button.button,
+a.button {
+	padding: .8em 1.4em;
 	position: relative;
 	transition: .2s;
-	padding: .8em 1.4em;
 	-webkit-font-smoothing: antialiased;
+	margin-right: 3.35em;
 	&:before,
 	&:after {
-		content: "\00a0";
-		font-family: 'FontAwesome', sans-serif;
-		font-size: 2em;
 		position: absolute;
 		top: 0;
 		left: 100%;
 		bottom: 0;
 		padding: inherit;
 		margin: 0;
+		font-size: 1.2em;
 	}
 	&:before {
-		background: darken(@color-swatch3, 10%);
+		transition: .2s;
+		font-family: 'FontAwesome', sans-serif;
+		z-index: 1;
+		text-indent: -.2em;
 	}
 	&:after {
-		content: "\F105";
+		background: darken(@color-swatch3, 10%);
+		content: "\00a0\00a0";
+		font-size: 1em;
 	}
-	&:hover:after {
+}
+
+
+// Button widget
+button.buttonwidget__button {
+	&:before,
+	&:after {
+		font-size: 2em;
+	}
+	&:before {
+		content: "\F105";
+		text-indent: .1em;
+	}
+	&:hover:before {
 		-webkit-animation: bounceright .4s alternate ease infinite;
 	}
-
 }
 
 @-webkit-keyframes bounceright {
 	from { text-indent: 0; }
 	to   { text-indent: .2em; }
+}
+
+
+// Click to call widget and Phone number widget
+.phone-number-link {
+	.button;
+	&:before,
+	&:after {
+		font-size: 1.35em;
+	}
+	&:hover:before {
+		-webkit-animation: wiggle .05s alternate ease infinite;
+	}
+}
+
+@-webkit-keyframes wiggle {
+	from { -webkit-transform: rotate(0deg); }
+	to   { -webkit-transform: rotate(30deg); }
+}
+
+
+// Sign up and contact form widget buttons
+button.signupform__input,
+button.contactform__input {
+	&:before,
+	&:after {
+		font-size: 1em;
+		transition: .2s;
+	}
+	&:before {
+		content: "\f0e0";
+	}
+	&:hover:before {
+		-webkit-animation: none;
+		-webkit-transform: skew(-20deg);
+		text-indent: .1em;
+	}
+}
+
+// Blog search widget and product list widget buttons
+.blogsearch__input,
+.ecomproductslist__input {
+	&:before {
+		content:"\f002";
+	}
+	&:hover:before {
+		-webkit-transform: scale(1.4);
+	}
+}
+
+button.ecombasketsummary__input {
+	&:before {
+		content: "\f09d";
+	}
+	&:hover:before {
+		-webkit-animation: none;
+		-webkit-transform: skew(-20deg);
+	}
+	&:after {
+		content: "\00a0\00a0\00a0";
+	}
 }

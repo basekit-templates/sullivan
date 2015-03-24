@@ -149,8 +149,9 @@ input, textarea, button, .button {
 		+ .container {
 			padding-right: 25%;
 		}
-		figure {
+		.figure {
 			margin: 0;
+			background-color: transparent;
 		}
 	}
 }
@@ -166,4 +167,28 @@ input, textarea, button, .button {
 		background-color: fadeout(@color-swatch5, 70%);
 		height: 1px;
 	}
+}
+
+
+// Images
+.image-title,
+.image-description {
+	.paragraph;
+}
+
+.image-title {
+	font-weight: 700;
+}
+
+.figure {
+	display: inline-block;
+	background-color: lighten(@color-swatch1, 5%);
+	transition: .2s;
+	&:hover {
+		background-color: lighten(@color-swatch1, 10%);
+	}
+}
+
+.caption {
+	padding: 0 10px;
 }
