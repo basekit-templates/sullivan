@@ -1,0 +1,30 @@
+// ------------
+// social icons
+// ------------
+
+.social-name {
+	display: none;
+}
+
+.social-link {
+	text-align: center;
+	display: inline-block;
+	padding: .45em;
+	border: 1px solid @color-swatch5;
+	border-radius: 100%;
+	transition: .2s;
+	font-size: @font-swatch4-font-size;
+	&:before {
+		transition: .2s;
+		display: inline-block;
+		width: 1em;
+		margin-right: 0;
+	}
+	&:hover {
+		border-color: @color-swatch3;
+		background-color: @color-swatch3;
+		&:before {
+			color: lighten(@color-swatch1, 5%);
+		}
+	}
+}

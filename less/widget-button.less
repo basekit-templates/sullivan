@@ -1,0 +1,38 @@
+// ------------
+// buttons
+// ------------
+
+button,
+button.button {
+	position: relative;
+	transition: .2s;
+	padding: .8em 1.4em;
+	-webkit-font-smoothing: antialiased;
+	&:before,
+	&:after {
+		content: "\00a0";
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 2em;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		bottom: 0;
+		padding: inherit;
+		margin: 0;
+	}
+	&:before {
+		background: darken(@color-swatch3, 10%);
+	}
+	&:after {
+		content: "\F105";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .4s alternate ease infinite;
+	}
+
+}
+
+@-webkit-keyframes bounceright {
+	from { text-indent: 0; }
+	to   { text-indent: .2em; }
+}
