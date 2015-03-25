@@ -44,9 +44,13 @@ a {
 // Wrapping container
 .container,
 .feature__content-wrap {
-    width: 85%;
-    margin: 0 auto;
+	width: 85%;
+	margin: 0 auto;
 	padding: 20px 0;
+	@media @mobile {
+		padding: 10px 0;
+		width: 90%;
+	}
 }
 
 
@@ -149,6 +153,9 @@ input, textarea, button, .button {
 		}
 		+ .container {
 			padding-right: 25%;
+			@media @mobile {
+				padding-right: 0;
+			}
 		}
 		.figure {
 			margin: 0;
@@ -156,6 +163,8 @@ input, textarea, button, .button {
 		}
 		@media @mobile {
 			display: none;
+			width: 0;
+			overflow: hidden;
 		}
 	}
 }

@@ -29,6 +29,7 @@ select.select {
 		font-family: 'FontAwesome', sans-serif;
 		z-index: 1;
 		text-indent: -.2em;
+		-webkit-transform-origin: center center;
 	}
 	&:after {
 		background-color: @font-swatch7-background-color-hover;
@@ -302,16 +303,49 @@ table {
 
 .widget__dropbox {
 	font-family: @font-swatch7-font-family;
-	font-size: @font-swatch7-font-size;
 	color: @font-swatch7-color;
-	background-color: @font-swatch7-background-color-hover;
 	display: inline-block;
+	font-size: 0;
+}
+
+.button.dropbox__button {
+	margin-right: 3.3em;
 }
 
 .dropbox__label {
 	display: inline-block;
 	padding: .8em 1.4em .8em 0;
+	background-color: @font-swatch7-background-color-hover;
+	font-size: @font-swatch7-font-size;
+	-webkit-font-smoothing: antialiased;
 	@media @mobile {
 		padding-left: 1.4em;
 	}
+}
+
+// Blog pagination
+.button.button--previous {
+	margin-right: 0;
+	margin-left: 3.35em;
+	&:before,
+	&:after {
+		right: 100%;
+		left: auto;
+		font-size: 2em;
+		content: "\00a0";
+	}
+	&:before {
+		content: "\F104";
+		text-indent: -0.2em;
+	}
+	&:hover:before {
+		transition: .2s;
+		-webkit-animation: bounceleft .4s alternate ease infinite;
+		-webkit-transform: inherit;
+	}
+}
+
+@-webkit-keyframes bounceleft {
+	from { text-indent: 0; }
+	to   { text-indent: -0.6em; }
 }

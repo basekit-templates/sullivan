@@ -3,4 +3,79 @@
 // ----
 
 // blog
-//...
+.image-link {
+	.menu .item-image .image-link;
+	.image {
+		.menu .item-image .image;
+	}
+}
+
+.menu .item-image .image-link,
+.image-link,
+.product-item-image,
+.product-item-image .image-link {
+	background-color: lighten(@color-swatch1, 3%);
+}
+
+.item-content,
+.product-item-details {
+	margin-top: 0;
+	background-color: lighten(@color-swatch1, 5%);
+	padding: 18px 20px 20px;
+	@media @mobile {
+		padding: 8px 10px 10px;
+	}
+}
+
+.menu-section--featured {
+	padding: 20px;
+	@media @mobile {
+		padding: 10px;
+	}
+}
+
+.menu .menu-item--featured {
+	padding: 0;
+	 .item-image .image-link {
+		background-color: lighten(@color-swatch2, 2%);
+	}
+	.item-content {
+		background-color: @color-swatch2
+	}
+	h3, h4, p, li {
+		color: lighten(@color-swatch1, 5%);
+	}
+}
+
+.menu-item {
+	width: 100%;
+	@media @mobile {
+		margin-bottom: 10px;
+	}
+}
+
+.menu-items:not(.menu-section--subsection),
+.menu-list {
+	column-gap: 20px;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+}
+
+.section-subtitle {
+	.paragraph;
+	font-weight: 700;
+}
+
+.section-header {
+	margin-bottom: 10px;
+}
+
+.menu > .menu-section {
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid fadeout(@color-swatch5, 70%);
+}
+
+.dietary-item {
+	border-bottom: 1px solid @color-swatch1;
+}
