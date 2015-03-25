@@ -15,6 +15,7 @@
 @import "@{templateLocal}/less/widget-twitter.less";
 @import "@{templateLocal}/less/widget-button.less";
 @import "@{templateLocal}/less/widget-socialicons.less";
+@import "@{templateLocal}/less/widget-basket.less";
 
 @import "@{templateLocal}/less/plugin-blog.less";       // Plugins
 @import "@{templateLocal}/less/plugin-menu.less";
@@ -153,6 +154,9 @@ input, textarea, button, .button {
 			margin: 0;
 			background-color: transparent;
 		}
+		@media @mobile {
+			display: none;
+		}
 	}
 }
 
@@ -192,3 +196,18 @@ input, textarea, button, .button {
 .caption {
 	padding: 0 10px;
 }
+
+
+// Yelp widget
+.review-list,
+.yelp-title {
+	background-color: lighten(@color-swatch1, 5%);
+	padding: 18px 20px 20px;
+}
+
+.review-list {
+	list-style: none;
+	background-color: lighten(@color-swatch1, 3%);
+	margin: 0;
+}
+

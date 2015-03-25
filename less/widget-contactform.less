@@ -20,6 +20,7 @@ textarea {
 	box-shadow: inset 0 0 0 1px darken(@color-swatch1, 5%);
 	border: none;
 	border-radius: 0;
+	-webkit-appearance: none;
 	transition: .2s;
 	&:hover {
 		background-color: lighten(@color-swatch1, 15%);
@@ -36,12 +37,34 @@ textarea {
 .ecomproductslist__form-body {
 	display: flex;
 	align-items: flex-end;
+	margin-bottom: 10px;
 	input[type="email"],
 	input[type="search"] {
 		box-shadow: inset 0 0 0 1px @color-swatch3;
 	}
+	.form-group {
+		margin-bottom: 0;
+	}
 	.form-group:first-of-type {
 		flex: 1 1 auto;
+		margin-bottom: 0;
+	}
+	@media @mobile {
+		.button--submit,
+		.form-group {
+			width: 100%;
+		}
+		.button--submit {
+			margin-right: 0;
+			padding-right: 3.35em;
+			&:before,
+			&:after {
+				left: auto;
+				right: 0;
+				padding-left: 1.8em;
+				padding-right: 1em;
+			}
+		}
 	}
 }
 
