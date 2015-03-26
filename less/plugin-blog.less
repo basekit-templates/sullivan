@@ -35,7 +35,8 @@
 }
 
 .menu .menu-item--featured {
-	padding: 0;
+	padding: 0 0 20px;
+	background-color: transparent;
 	 .item-image .image-link {
 		background-color: lighten(@color-swatch2, 2%);
 	}
@@ -49,8 +50,10 @@
 
 .menu-item {
 	width: 100%;
+	padding-bottom: 20px;
+	margin-bottom: 0;
 	@media @mobile {
-		margin-bottom: 10px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -59,6 +62,7 @@
 	column-gap: 20px;
 	-moz-column-gap: 20px;
 	-webkit-column-gap: 20px;
+	overflow: hidden;
 }
 
 .section-subtitle {
@@ -78,4 +82,13 @@
 
 .dietary-item {
 	border-bottom: 1px solid @color-swatch1;
+}
+
+.tag-item {
+	&:after {
+		content: ", ";
+	}
+	&:last-of-type:after {
+		content: "";
+	}
 }

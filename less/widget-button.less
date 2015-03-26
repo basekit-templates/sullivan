@@ -247,25 +247,79 @@ select.select {
 	}
 }
 
-.button.button--quantity {
+.button.button--quantity,
+.slide-navigation .button {
 	width: auto;
 	height: auto;
 	padding: .8em 1.4em;
-	text-indent: -100px;
-	line-height: 1em;
+	margin-right: 0;
+	text-indent: -200px;
+// 	line-height: 1em;
 	width: 3.1em;
 	-webkit-transform-origin: top left;
 	&:before {
 		font-family: 'FontAwesome', sans-serif;
-		content: "\f067";
 		top: 0;
 		left: 0;
+		right: 0;
 		font-size: 1em;
+
+	}
+	&:after {
+		display: none;
+	}
+}
+
+.button.button--quantity {
+	&:before {
+		content: "\f067";
 		line-height: 1.5em;
 	}
 	&.quantity-minus:before {
 		content: "\f068";
 	}
+}
+
+.slide-navigation .button {
+	width: 3.5em;
+	&:before {
+		font-size: 2em;
+		text-indent: 0;
+	}
+}
+
+.slide-navigation .next-button {
+	float: right;
+	&:before {
+		content: "\F105";
+	}
+	&:hover:before {
+		-webkit-animation: bounceright .4s alternate ease infinite;
+		-webkit-transform: inherit;
+	}
+}
+
+.slide-navigation .previous-button {
+	float: left;
+	&:before {
+		content: "\F104";
+		text-indent: -0.15em;
+	}
+	&:hover:before {
+		-webkit-animation: bounceleft .4s alternate ease infinite;
+		-webkit-transform: inherit;
+	}
+}
+
+.slide-navigation .pause-toggle:before {
+	font-size: 1em;
+	text-indent: -0.1em;
+}
+
+.slide-pagination {
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 div.quantity-wrap {
@@ -336,7 +390,7 @@ table {
 	}
 	&:before {
 		content: "\F104";
-		text-indent: -0.2em;
+		text-indent: -0.15em;
 	}
 	&:hover:before {
 		transition: .2s;
@@ -346,6 +400,6 @@ table {
 }
 
 @-webkit-keyframes bounceleft {
-	from { text-indent: 0; }
+	from { text-indent: -0.2em }
 	to   { text-indent: -0.6em; }
 }

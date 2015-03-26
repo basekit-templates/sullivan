@@ -16,6 +16,7 @@
 @import "@{templateLocal}/less/widget-button.less";
 @import "@{templateLocal}/less/widget-socialicons.less";
 @import "@{templateLocal}/less/widget-basket.less";
+@import "@{templateLocal}/less/widget-slideshow.less";
 
 @import "@{templateLocal}/less/plugin-blog.less";       // Plugins
 @import "@{templateLocal}/less/plugin-menu.less";
@@ -135,37 +136,42 @@ input, textarea, button, .button {
 // Fixed image
 .template-content {
 	position: relative;
-	> .widget--template-widget {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		width: 30%;
-		background-color: @color-swatch2;
-		z-index: -2;
-		.imagewidget {
-			.gradient(fadeout(@color-swatch2, 100%), fadeout(@color-swatch2, 0%));
-		}
-		img {
-			z-index: -1;
-			position: relative;
-			width: 100%;
-		}
-		+ .container {
-			padding-right: 25%;
-			@media @mobile {
-				padding-right: 0;
-			}
-		}
-		.figure {
-			margin: 0;
-			background-color: transparent;
-		}
+}
+
+#page-zones__template-widgets__image-sidebarimage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 30%;
+	background-color: @color-swatch2;
+	z-index: -2;
+	.imagewidget {
+		.gradient(fadeout(@color-swatch2, 100%), fadeout(@color-swatch2, 0%));
+	}
+	.image-link {
+		background-color: transparent;
+		height: auto;
+	}
+	img {
+		z-index: -1;
+		position: relative;
+		width: 100%;
+	}
+	+ .container {
+		padding-right: 25%;
 		@media @mobile {
-			display: none;
-			width: 0;
-			overflow: hidden;
+			padding-right: 0;
 		}
+	}
+	.figure {
+		margin: 0;
+		background-color: transparent;
+	}
+	@media @mobile {
+		display: none;
+		width: 0;
+		overflow: hidden;
 	}
 }
 
@@ -179,6 +185,28 @@ input, textarea, button, .button {
 		margin: 0;
 		background-color: fadeout(@color-swatch5, 70%);
 		height: 1px;
+	}
+}
+
+.template-footer {
+	.container {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-box-align: center;
+		-moz-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	p {
+		padding-bottom: 0;
+	}
+	.logo-image {
+		padding: 10px 20px 10px 0;
 	}
 }
 
