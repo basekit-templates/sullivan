@@ -7,6 +7,16 @@
 
 .responsiveslideshow {
 	position: relative;
+	.button {
+		background-color: fadeout(darken(@color-swatch5, 30%), 30%);
+		&:hover {
+			background-color: fadeout(darken(@color-swatch5, 50%), 10%);
+		}
+	}
+	.image-title,
+	.image-description {
+		color: lighten(@color-swatch1, 30%);
+	}
 	.slide-navigation,
 	.slide-pagination {
 		opacity: 0.3;
@@ -32,6 +42,10 @@
 	}
 }
 
+.responsiveslideshow .pagination-item.selected .button--pagination {
+	background-color: fadeout(darken(@color-swatch5, 50%), 10%);
+}
+
 .slide-navigation {
 	position: absolute;
 	left: 0;
@@ -40,7 +54,6 @@
 	width: 100%;
 	text-align: center;
 }
-
 
 
 // Slideshow set minimum height
