@@ -54,15 +54,17 @@
 				"defaultlogo": asset('images/logodark.png')
 			})|raw}}
 
-			{{widget('profile', 'footerprofile1', {
-				"profileType":"strapline",
-				"strapline":"profile"
-			})|raw}}
+			<div class="profile-content">
+				{{widget('profile', 'footerprofile1', {
+					"profileType":"strapline",
+					"strapline":"profile"
+				})|raw}}
 
-			{{widget('profile', 'footerprofile2', {
-				"profileType":"copyright",
-				"copyright":"profile"
-			})|raw}}
+				{{widget('profile', 'footerprofile2', {
+					"profileType":"copyright",
+					"copyright":"profile"
+				})|raw}}
+			</div>
 
 		</div>
 
