@@ -144,12 +144,12 @@ input, textarea {
 	right: 0;
 	width: 30%;
 	background-color: @color-swatch2;
-	z-index: -2;
 	.imagewidget {
-		.gradient(fadeout(@color-swatch2, 100%), fadeout(@color-swatch2, 0%));
+		z-index: 1;
+		position: relative
 	}
 	.image-link {
-		background-color: transparent;
+		.gradient(fadeout(@color-swatch2, 100%), fadeout(@color-swatch2, 0%));
 		height: auto;
 	}
 	img {
@@ -164,6 +164,7 @@ input, textarea {
 		}
 	}
 	.figure {
+		width: 100%;
 		margin: 0;
 		background-color: transparent;
 	}
