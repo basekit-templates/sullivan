@@ -13,14 +13,15 @@ select.select {
 	position: relative;
 	transition: .2s;
 	-webkit-font-smoothing: antialiased;
-	margin-right: 3.35em;
+	padding-right: 5em;
 	&:before,
 	&:after {
 		position: absolute;
 		top: 0;
-		left: 100%;
+		right: 0;
 		bottom: 0;
 		padding: inherit;
+		padding-right: 1em;
 		margin: 0;
 		font-size: 1.2em;
 	}
@@ -28,13 +29,11 @@ select.select {
 		transition: .2s;
 		font-family: 'FontAwesome', sans-serif;
 		z-index: 1;
-		text-indent: -.2em;
 		-webkit-transform-origin: center center;
 	}
 	&:after {
 		background-color: @font-swatch7-background-color-hover;
-		content: "\00a0\00a0";
-		font-size: 1em;
+		content: "\00a0\00a0\00a0";
 	}
 	&:hover:before {
 		-webkit-transform: scale(1.4);
@@ -49,6 +48,10 @@ button.buttonwidget__button,
 	&:before,
 	&:after {
 		font-size: 2em;
+		padding: .4em .65em;
+	}
+	&:after {
+		content: "\00a0\00a0";
 	}
 	&:before {
 		content: "\F105";
@@ -62,7 +65,7 @@ button.buttonwidget__button,
 
 @-webkit-keyframes bounceright {
 	from { text-indent: 0; }
-	to   { text-indent: .2em; }
+	to   { text-indent: -.8em; }
 }
 
 
@@ -72,6 +75,7 @@ button.buttonwidget__button,
 	&:before,
 	&:after {
 		font-size: 1.35em;
+		padding-right: 1em;
 	}
 	&:hover:before {
 		-webkit-animation: wiggle .05s alternate ease infinite;
@@ -91,6 +95,7 @@ button.contactform__input {
 	&:after {
 		font-size: 1em;
 		transition: .2s;
+		padding-right: 1.2em;
 	}
 	&:before {
 		content: "\f0e0";
@@ -118,15 +123,12 @@ button.ecombasketsummary__input {
 		-webkit-animation: none;
 		-webkit-transform: skew(-20deg);
 	}
-	&:after {
-		content: "\00a0\00a0\00a0";
-	}
 }
 
 // Remove icon and tab from certain buttons
 .button.ecomproductslist__button,
 .button.button--quantity {
-	margin-right: 0;
+	padding-right: 1.4em;
 	&:after {
 		content: "";
 		display: none;
@@ -171,7 +173,6 @@ select.select {
 	border: none;
 	height: auto;
 	padding-right: 5.3em;
-	margin-right: 0;
 	z-index: 2;
 	background-color: transparent;
 	font-size: inherit;
@@ -253,7 +254,6 @@ select.select {
 	width: auto;
 	height: auto;
 	padding: .8em 1.4em;
-	margin-right: 0;
 	text-indent: -200px;
 	overflow: hidden;
 	width: 3.1em;
@@ -264,6 +264,7 @@ select.select {
 		left: 0;
 		right: 0;
 		font-size: 1em;
+		text-indent: -.3em;
 
 	}
 	&:after {
@@ -314,7 +315,7 @@ select.select {
 
 .slide-navigation .pause-toggle:before {
 	font-size: 1em;
-	text-indent: -0.1em;
+	text-indent: -0.45em;
 }
 
 .slide-pagination {
@@ -369,10 +370,6 @@ table {
 	font-size: 0;
 }
 
-.button.dropbox__button {
-	margin-right: 3.3em;
-}
-
 .dropbox__label {
 	display: inline-block;
 	padding: .8em 1.4em .8em 0;
@@ -386,18 +383,18 @@ table {
 
 // Blog pagination
 .button.button--previous {
-	margin-right: 0;
-	margin-left: 3.35em;
+	padding-left: 5em;
+	padding-right: 1.4em;
 	&:before,
 	&:after {
-		right: 100%;
-		left: auto;
+		right: auto;
+		left: 0;
 		font-size: 2em;
-		content: "\00a0";
+		content: "\00a0\00a0";
+		padding: .4em .65em;
 	}
 	&:before {
 		content: "\F104";
-		text-indent: -0.15em;
 	}
 	&:hover:before {
 		transition: .2s;
@@ -407,6 +404,6 @@ table {
 }
 
 @-webkit-keyframes bounceleft {
-	from { text-indent: -0.2em }
-	to   { text-indent: -0.6em; }
+	from { text-indent: 0 }
+	to   { text-indent: -0.2em; }
 }
