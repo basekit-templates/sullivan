@@ -55,7 +55,7 @@ button.buttonwidget__button,
 	}
 	&:before {
 		content: "\F105";
-		text-indent: .1em;
+		text-indent: -.4em;
 	}
 	&:hover:before {
 		-webkit-animation: bounceright .4s alternate ease infinite;
@@ -64,7 +64,7 @@ button.buttonwidget__button,
 }
 
 @-webkit-keyframes bounceright {
-	from { text-indent: 0; }
+	from { text-indent: -.4em; }
 	to   { text-indent: -.8em; }
 }
 
@@ -255,17 +255,15 @@ select.select {
 	height: auto;
 	padding: .8em 1.4em;
 	text-indent: -200px;
-	overflow: hidden;
 	width: 3.1em;
 	-webkit-transform-origin: top left;
 	&:before {
 		font-family: 'FontAwesome', sans-serif;
 		top: 0;
-		left: 0;
 		right: 0;
 		font-size: 1em;
 		text-indent: -.3em;
-
+		padding: .4em .65em;
 	}
 	&:after {
 		display: none;
@@ -276,6 +274,8 @@ select.select {
 	&:before {
 		content: "\f067";
 		line-height: 1.5em;
+		left: 0;
+		padding: inherit;
 	}
 	&.quantity-minus:before {
 		content: "\f068";
@@ -284,6 +284,7 @@ select.select {
 
 .slide-navigation .button {
 	width: 3.5em;
+	overflow: hidden;
 	&:before {
 		font-size: 2em;
 		text-indent: 0;
@@ -306,6 +307,7 @@ select.select {
 	&:before {
 		content: "\F104";
 		text-indent: -0.15em;
+		left: 0;
 	}
 	&:hover:before {
 		-webkit-animation: bounceleft .4s alternate ease infinite;
@@ -315,7 +317,8 @@ select.select {
 
 .slide-navigation .pause-toggle:before {
 	font-size: 1em;
-	text-indent: -0.45em;
+	left: 0;
+	padding: .7em 1em;
 }
 
 .slide-pagination {
@@ -392,6 +395,7 @@ table {
 		font-size: 2em;
 		content: "\00a0\00a0";
 		padding: .4em .65em;
+		text-indent: -0.15em;
 	}
 	&:before {
 		content: "\F104";
@@ -404,6 +408,6 @@ table {
 }
 
 @-webkit-keyframes bounceleft {
-	from { text-indent: 0 }
-	to   { text-indent: -0.2em; }
+	from { text-indent: -.15em; }
+	to   { text-indent: .2em; }
 }
