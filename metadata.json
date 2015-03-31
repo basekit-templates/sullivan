@@ -3,8 +3,10 @@
     "thumbnail": "sullivan.png",
     "widgetVersion":2,
     "images": [
-        "images/feature.jpg",
-        "images/logo.png"
+        "images/feature.png",
+        "images/logo.png",
+        "images/logodark.png",
+        "images/sidebar.jpg"
     ],
     "pageTypes": [
         "home"
