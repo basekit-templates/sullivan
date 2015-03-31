@@ -109,7 +109,7 @@ button.contactform__button {
 
 // Blog search widget and product list widget buttons
 .blogsearch__button,
-.ecomproductslist__button {
+.form-group .ecomproductslist__button {
 	&:before {
 		content:"\f002";
 	}
@@ -126,9 +126,8 @@ button.ecombasketsummary__button {
 }
 
 // Remove icon and tab from certain buttons
-.button.ecomproductslist__button,
+.button.button--pagination,
 .button.button--quantity {
-	padding-right: 1.4em;
 	&:after {
 		content: "";
 		display: none;
@@ -212,6 +211,19 @@ select.select {
 		background-color: @font-swatch7-background-color-hover;
 		font-size: 2em;
 		content: "\00a0\00a0";
+	}
+	&:hover:before {
+		-webkit-animation: bouncedown .4s alternate ease infinite;
+	}
+}
+
+.button--expand {
+	&:before {
+		transition: .2s;
+		z-index: 1;
+		font-size: 1.9em;
+		font-family: 'FontAwesome', sans-serif;
+		content: "\f107";
 	}
 	&:hover:before {
 		-webkit-animation: bouncedown .4s alternate ease infinite;
