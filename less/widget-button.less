@@ -64,8 +64,8 @@ button.buttonwidget__button,
 }
 
 @-webkit-keyframes bounceright {
-	from { text-indent: -.4em; }
-	to   { text-indent: -.8em; }
+	from { -webkit-transform: translate(0, 0); }
+	to   { -webkit-transform: translate(.15em, 0); }
 }
 
 
@@ -189,6 +189,7 @@ select.select {
 	background-color: @font-swatch7-background-color;
 	font-size: @font-swatch7-font-size;
 	transition: .2s;
+	-webkit-font-smoothing: antialiased;
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 	}
@@ -276,7 +277,7 @@ select.select {
 		top: 0;
 		right: 0;
 		font-size: 1em;
-		text-indent: -.3em;
+		text-indent: -.25em;
 		padding: .4em .65em;
 	}
 	&:after {
@@ -422,6 +423,6 @@ table {
 }
 
 @-webkit-keyframes bounceleft {
-	from { text-indent: -.15em; }
-	to   { text-indent: .2em; }
+	from { -webkit-transform: translate(0, 0); }
+	to   { -webkit-transform: translate(-.15em, 0); }
 }
