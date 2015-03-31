@@ -30,7 +30,6 @@ select.select {
 		font-family: 'FontAwesome', sans-serif;
 		z-index: 1;
 		-webkit-transform-origin: center center;
-		content: " ";
 	}
 	&:after {
 		background-color: @font-swatch7-background-color-hover;
@@ -90,8 +89,8 @@ button.buttonwidget__button,
 
 
 // Sign up and contact form widget buttons
-button.signupform__input,
-button.contactform__input {
+button.signupform__button,
+button.contactform__button {
 	&:before,
 	&:after {
 		font-size: 1em;
@@ -109,14 +108,14 @@ button.contactform__input {
 }
 
 // Blog search widget and product list widget buttons
-.blogsearch__input,
-.ecomproductslist__input {
+.blogsearch__button,
+.ecomproductslist__button {
 	&:before {
 		content:"\f002";
 	}
 }
 
-button.ecombasketsummary__input {
+button.ecombasketsummary__button {
 	&:before {
 		content: "\f09d";
 	}
