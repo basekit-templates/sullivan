@@ -139,6 +139,7 @@ input, textarea {
 
 #page-zones__template-widgets__image-sidebarimage {
 	position: absolute;
+	overflow: hidden;
 	top: 0;
 	bottom: 0;
 	right: 0;
@@ -171,7 +172,7 @@ input, textarea {
 		margin: 0;
 		background-color: transparent;
 	}
-	@media @mobile {
+	@media ( min-width:900px ) {
 		display: none;
 		width: 0;
 		overflow: hidden;
@@ -188,6 +189,7 @@ input, textarea {
 		margin: 0;
 		background-color: fadeout(@color-swatch5, 70%);
 		height: 1px;
+		vertical-align: bottom;
 	}
 }
 
