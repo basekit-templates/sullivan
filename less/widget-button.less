@@ -124,6 +124,14 @@ button.contactform__button {
 	}
 }
 
+.button.button--clear {
+	margin-left: 20px;
+	&:before {
+		content: "\f00d";
+		padding-right: 1.2rem;
+	}
+}
+
 button.ecombasketsummary__button {
 	&:before {
 		content: "\f09d";
@@ -162,6 +170,14 @@ span.remove-text {
 }
 .item-remove:hover:before {
 	-webkit-transform: scale(1.4);
+}
+
+.button.item-remove {
+	&:before,
+	&:after {
+		padding: 0.6rem 0.55rem;
+		font-size: 1rem;
+	}
 }
 
 .button.ecomproduct__button,
