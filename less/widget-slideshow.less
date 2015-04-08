@@ -17,14 +17,12 @@
 	.image-description {
 		color: lighten(@color-swatch1, 30%);
 	}
-	.slide-navigation,
-	.slide-pagination {
+	.slide-navigation {
 		opacity: 0.3;
 		transition: .2s;
 	}
 	&:hover {
-		.slide-navigation,
-		.slide-pagination {
+		.slide-navigation {
 			opacity: 1;
 		}
 	}
@@ -43,7 +41,7 @@
 }
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
-	background-color: fadeout(darken(@color-swatch5, 50%), 10%);
+	background-color: @color-swatch3;
 }
 
 .slide-navigation {
@@ -72,5 +70,68 @@
 	&:before,
 	&:after {
 		display: none;
+	}
+}
+
+.slide-navigation .button {
+	width: 3.5em;
+	overflow: hidden;
+	&:before {
+		font-size: 2rem;
+		text-indent: 0;
+	}
+}
+
+.slide-navigation .next-button {
+	float: right;
+	&:before {
+		content: "\F105";
+	}
+	&:hover:before {
+		-webkit-animation: bounceright .4s alternate ease infinite;
+		-webkit-transform: inherit;
+	}
+}
+
+.slide-navigation .previous-button {
+	float: left;
+	&:before {
+		content: "\F104";
+		text-indent: -0.15rem;
+		left: 0;
+	}
+	&:hover:before {
+		-webkit-animation: bounceleft .4s alternate ease infinite;
+		-webkit-transform: inherit;
+	}
+}
+
+.slide-navigation .pause-toggle:before {
+	font-size: 1rem;
+	left: 0;
+	padding: .7rem 1rem;
+}
+
+.slide-pagination {
+	.pagination-list {
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-align-content: stretch;
+		-ms-flex-line-pack: stretch;
+		align-content: stretch;
+	}
+	.pagination-item {
+		-moz-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+	.button {
+		text-indent: -600px;
+		width: 100%;
+		height: .7em;
 	}
 }

@@ -67,21 +67,22 @@
 // Gallery caption
 .gallery .caption {
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
     display: block;
+    margin: 0;
+    opacity: 0;
+    transition: .4s ease;
     padding: 20px;
     @media @mobile {
 	    padding: 10px;
     }
-    margin: 0;
-    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.8);
-    bottom: -100%;
-    transition: .4s ease;
 }
 
 // Gallery show caption on hover
 .gallery .figure:hover .caption {
-    bottom: 0;
+    opacity: 1;
 }
 
 .caption-link {

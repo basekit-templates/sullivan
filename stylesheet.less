@@ -6,8 +6,6 @@
 // ----------------
 @import "@{templateCommon}/bk-less-framework.less";     // BK LESS Framework
 
-@import "@{templateLocal}/less/variables.less";         // Variables
-
 @import "@{templateLocal}/less/widget-gallery.less";    // Widgets
 @import "@{templateLocal}/less/widget-navigation.less";
 @import "@{templateLocal}/less/widget-content.less";
@@ -254,6 +252,12 @@ input, textarea {
 	&:hover {
 		background-color: lighten(@color-swatch1, 10%);
 	}
+}
+
+.caption,
+.responsiveslideshow .caption {
+	background-color: transparent;
+	.gradient(fadeout(@color-swatch5, 100%), fadeout(@color-swatch5, 0%));
 }
 
 .caption {
