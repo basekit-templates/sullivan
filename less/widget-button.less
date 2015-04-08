@@ -52,7 +52,8 @@ select.select {
 
 // Button widget
 button.buttonwidget__button,
-.button.button--primary {
+.button.button--primary,
+.button.button--next {
 	&:before,
 	&:after {
 		font-size: 2rem;
@@ -226,6 +227,10 @@ select.select {
 	&:hover:before {
 		-webkit-animation: bouncedown .4s alternate ease infinite;
 	}
+}
+
+.select::-ms-expand {
+	display: none;
 }
 
 .button--expand {
