@@ -2,6 +2,17 @@
     "name": "Sullivan",
     "thumbnail": "sullivan.png",
     "widgetVersion":2,
+    "tags": {
+        "en": [
+            "business", "corporate", "company", "corporation", "professional"
+        ],
+        "es": [
+            "negocios", "corporativo", "empresa", "corporativo", "profesional"
+        ],
+        "br": [
+            "negócio", "corporativo", "companhia", "corporação", "eleição", "profissional"
+        ]
+    },
     "images": [
         "images/feature.png",
         "images/logo.png",
