@@ -78,7 +78,7 @@
 	width: 3.5em;
 	overflow: hidden;
 	&:before {
-		font-size: 2rem;
+		font-size: bkscale(@font-swatch7-font-size, 2.0);
 		text-indent: 0;
 	}
 }
@@ -108,9 +108,9 @@
 }
 
 .slide-navigation .pause-toggle:before {
-	font-size: 1rem;
+	font-size: @font-swatch7-font-size;
 	left: 0;
-	padding: .7rem 1rem;
+	padding: bkscale(@font-swatch7-font-size, 0.7) @font-swatch7-font-size;
 }
 
 .slide-pagination {

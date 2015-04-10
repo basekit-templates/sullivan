@@ -21,9 +21,9 @@ select.select {
 		right: 0;
 		bottom: 0;
 		padding: inherit;
-		padding-right: 1rem;
+		padding-right: @font-swatch7-font-size;
 		margin: 0;
-		font-size: 1.2rem;
+		font-size: bkscale(@font-swatch7-font-size, 1.2);
 	}
 	&:before {
 		transition: .2s;
@@ -61,15 +61,14 @@ button.buttonwidget__button,
 .button.button--next {
 	&:before,
 	&:after {
-		font-size: 2rem;
-		padding: .6rem 1rem;
+		font-size: bkscale(@font-swatch7-font-size, 2.0);
+		padding: bkscale(@font-swatch7-font-size, 0.6) @font-swatch7-font-size;
 	}
 	&:after {
 		content: "\00a0\00a0";
 	}
 	&:before {
 		content: "\F105";
-		text-indent: -.4rem;
 	}
 	&:hover:before {
 		-webkit-animation: bounceright .4s alternate ease infinite;
@@ -88,8 +87,8 @@ button.buttonwidget__button,
 	.button;
 	&:before,
 	&:after {
-		font-size: 1.35rem;
-		padding-right: 1rem;
+		font-size: bkscale(@font-swatch7-font-size, 1.35);
+		padding-right: @font-swatch7-font-size;
 	}
 	&:hover:before {
 		-webkit-animation: wiggle .05s alternate ease infinite;
@@ -107,9 +106,9 @@ button.signupform__button,
 button.contactform__button {
 	&:before,
 	&:after {
-		font-size: 1rem;
+		font-size: @font-swatch7-font-size;
 		transition: .2s;
-		padding-right: 1.2rem;
+		padding-right: bkscale(@font-swatch7-font-size, 1.2);
 	}
 	&:before {
 		content: "\f0e0";
@@ -117,7 +116,7 @@ button.contactform__button {
 	&:hover:before {
 		-webkit-animation: none;
 		-webkit-transform: skew(-20deg);
-		text-indent: .1rem;
+		text-indent: bkscale(@font-swatch7-font-size, 0.1);
 	}
 }
 
@@ -133,7 +132,7 @@ button.contactform__button {
 	margin-left: 20px;
 	&:before {
 		content: "\f00d";
-		padding-right: 1.2rem;
+		padding-right: bkscale(@font-swatch7-font-size, 1.2);
 	}
 }
 
@@ -180,8 +179,8 @@ span.remove-text {
 .button.item-remove {
 	&:before,
 	&:after {
-		padding: 0.6rem 0.55rem;
-		font-size: 1rem;
+		padding:  bkscale(@font-swatch7-font-size, 0.6) bkscale(@font-swatch7-font-size, 0.55);
+		font-size: @font-swatch7-font-size;
 	}
 }
 
@@ -197,7 +196,7 @@ span.remove-text {
 	&:hover:before {
 		-webkit-animation: none;
 		-webkit-transform: rotate(-20deg);
-		text-indent: .1rem;
+		text-indent: bkscale(@font-swatch7-font-size, 0.1);
 	}
 }
 
@@ -234,19 +233,19 @@ select.select {
 		top: 0;
 		right: 0;
 		bottom: 0;
-		padding: .6rem 1rem;
+		padding: bkscale(@font-swatch7-font-size, 0.6) @font-swatch7-font-size;
 		color: inherit;
 	}
 	&:before {
 		transition: .2s;
 		z-index: 1;
-		font-size: 1.9rem;
+		font-size: bkscale(@font-swatch7-font-size, 1.9);
 		font-family: 'FontAwesome', sans-serif;
 		content: "\f107";
 	}
 	&:after {
 		background-color: @font-swatch7-background-color-hover;
-		font-size: 2rem;
+		font-size:  bkscale(@font-swatch7-font-size, 2.0);
 		content: "\00a0\00a0";
 	}
 	&:hover:before {
@@ -264,10 +263,10 @@ select.select {
 	&:before {
 		transition: .2s;
 		z-index: 1;
-		font-size: 1.9rem;
+		font-size: bkscale(@font-swatch7-font-size, 1.9);
 		font-family: 'FontAwesome', sans-serif;
 		content: "\f107";
-		padding: .6rem 1rem;
+		padding: bkscale(@font-swatch7-font-size, 0.6) @font-swatch7-font-size;
 	}
 	&:hover:before {
 		-webkit-animation: bouncedown .4s alternate ease infinite;
@@ -317,9 +316,9 @@ select.select {
 		font-family: 'FontAwesome', sans-serif;
 		top: 0;
 		right: 0;
-		font-size: 1rem;
+		font-size: @font-swatch7-font-size;
 		text-indent: -.25rem;
-		padding: .6rem 1rem;
+		padding: bkscale(@font-swatch7-font-size, 0.6) @font-swatch7-font-size;
 	}
 	&:after {
 		display: none;
@@ -329,7 +328,7 @@ select.select {
 .button.button--quantity {
 	&:before {
 		content: "\f067";
-		line-height: 1.5rem;
+		line-height: bkscale(@font-swatch7-font-size, 1.5);
 		left: 0;
 		padding: inherit;
 	}
@@ -403,9 +402,9 @@ table {
 	&:after {
 		right: auto;
 		left: 0;
-		font-size: 2rem;
+		font-size: bkscale(@font-swatch7-font-size, 2.0);
 		content: "\00a0\00a0";
-		padding: .6rem 1rem;
+		padding: bkscale(@font-swatch7-font-size, 0.6) @font-swatch7-font-size;
 		text-indent: -0.15rem;
 	}
 	&:before {
@@ -425,5 +424,5 @@ table {
 
 // Facebook share button adjustment
 .button.icon--facebook:before {
-	padding-right: 1.2rem;
+	padding-right: bkscale(@font-swatch7-font-size, 1.2);
 }
