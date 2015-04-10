@@ -2,6 +2,7 @@
     "name": "Sullivan",
     "thumbnail": "sullivan.png",
     "widgetVersion":2,
+    "templateType":"standard",
     "tags": {
         "en": [
             "business", "corporate", "company", "corporation", "professional"
