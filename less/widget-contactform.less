@@ -83,11 +83,16 @@ textarea {
 			}
 		}
 	}
-	[class*="columns-three"],
-	[class*="columns-four"] {
+	@media @mobile {
 		.small-singlelineform;
 	}
-	@media @mobile {
+}
+
+[class*="columns-three"],
+[class*="columns-four"] {
+	.signupform__form-body,
+	.blogsearch__form-body,
+	.ecomproductslist__form-body {
 		.small-singlelineform;
 	}
 }
