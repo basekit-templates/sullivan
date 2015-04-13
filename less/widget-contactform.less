@@ -59,10 +59,8 @@ textarea {
 		flex: 1 1 auto;
 		margin-bottom: 0;
 	}
-	[class*="columns-three"],
-	[class*="columns-four"],
-	@media @mobile {
-	display: inherit;
+	.small-singlelineform {
+		display: inherit;
 		.button--submit,
 		.form-group,
 		.button.button--clear {
@@ -84,6 +82,13 @@ textarea {
 				padding-right: 1rem;
 			}
 		}
+	}
+	[class*="columns-three"],
+	[class*="columns-four"] {
+		.small-singlelineform;
+	}
+	@media @mobile {
+		.small-singlelineform;
 	}
 }
 
