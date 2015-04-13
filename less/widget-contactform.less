@@ -59,32 +59,31 @@ textarea {
 		flex: 1 1 auto;
 		margin-bottom: 0;
 	}
-	.small-singlelineform {
-		display: inherit;
-		.button--submit,
-		.form-group,
-		.button.button--clear {
-			width: 100%;
-			margin-left: 0;
-			text-align: left;
-		}
-		.button.button--clear {
-			margin-top: 10px;
-		}
-		.button--submit {
-			margin-right: 0;
-			padding-right: 3.35em;
-			&:before,
-			&:after {
-				left: auto;
-				right: 0;
-				padding-left: 1.2rem;
-				padding-right: 1rem;
-			}
-		}
+}
+
+// Single line forms inside columns or mobile
+.small-singlelineform {
+	display: inherit;
+	.button--submit,
+	.form-group,
+	.button.button--clear {
+		width: 100%;
+		margin-left: 0;
+		text-align: left;
 	}
-	@media @mobile {
-		.small-singlelineform;
+	.button.button--clear {
+		margin-top: 10px;
+	}
+	.button--submit {
+		margin-right: 0;
+		padding-right: 3.35em;
+		&:before,
+		&:after {
+			left: auto;
+			right: 0;
+			padding-left: 1.2rem;
+			padding-right: 1rem;
+		}
 	}
 }
 
@@ -93,6 +92,14 @@ textarea {
 	.signupform__form-body,
 	.blogsearch__form-body,
 	.ecomproductslist__form-body {
+		.small-singlelineform;
+	}
+}
+
+.signupform__form-body,
+.blogsearch__form-body,
+.ecomproductslist__form-body {
+	@media @mobile {
 		.small-singlelineform;
 	}
 }
