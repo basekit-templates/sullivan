@@ -103,3 +103,23 @@
 		content: "";
 	}
 }
+
+.post-pagination {
+	.pagination-list {
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
+	.pagination-item {
+		-moz-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+
+		text-align: left;
+		&:last-of-type {
+			text-align: right;
+		}
+	}
+}
