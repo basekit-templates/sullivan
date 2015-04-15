@@ -2,7 +2,15 @@
 // menu
 // ----
 
-// Menu sections widget
-// --------------------
+// Menu widget
+// -----------
 
-//...
+[class*="columns-two"],
+[class*="columns-three"],
+[class*="columns-four"] {
+	div.menu-list {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
