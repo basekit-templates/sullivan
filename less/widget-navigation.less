@@ -4,40 +4,40 @@
 
 // Parent nav items, adds arrow icon
 .item-name--parent:after {
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    margin-left: 4px;
-    border: 5px solid transparent;
-    border-top-color: @color-swatch6;
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	margin-left: 4px;
+	border: 5px solid transparent;
+	border-top-color: @color-swatch6;
 }
 
 // Hide toggle on desktop
 .navigation-toggle {
-    display: none;
-    &:after {
-        content: "\f0c9";
-    }
-    @media @tablet {
-        display: inline-block;
-    }
+	display: none;
+	&:after {
+		content: "\f0c9";
+	}
+	@media @tablet {
+		display: inline-block;
+	}
 }
 
 // Clears margin on ul, hides navigatio on mobile (made visible in conjunction with navigation-toggle)
 .navigation-list {
-    margin: 0;
-    @media @tablet {
-        display: none;
-        &.open {
-            display: block;
-        }
-    }
+	margin: 0;
+	@media @tablet {
+		display: none;
+		&.open {
+			display: block;
+		}
+	}
 }
 
 // Sets background colour to navigation and dropdowns
 .extendednavigation,
 .navigation-list--children {
-    background-color: @font-swatch6-background-color;
+	background-color: @font-swatch6-background-color;
 }
 
 .extendednavigation {
@@ -50,9 +50,12 @@
 	&.selected {
 		background-color: @font-swatch6-background-color-hover;
 	}
-    @media @tablet {
-        display: block;
-    }
+	@media @tablet {
+		display: block;
+	}
+	.item-name {
+		word-wrap: break-word;
+	}
 }
 
 // Allow sub items to wrap
