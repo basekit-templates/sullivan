@@ -33,12 +33,17 @@
 	padding: 15px 0 0;
 }
 
-.menu-section--featured {
+.menu-section--featured,
+.menu-section--subsection {
 	padding: 20px;
 	margin-bottom: 20px;
 	@media @mobile {
 		padding: 10px;
 	}
+}
+
+.menu-section--subsection {
+	background-color: lighten(@color-swatch2, 2%);
 }
 
 .menu-section--subsection {
