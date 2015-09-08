@@ -164,7 +164,6 @@
         "site": {
             "site__bg-color": "#fff",
             "site__content-bg-color": "#fff",
-            "site__border-color": "#eee",
             "site__link-color": "@secondary-color",
             "companyname__color:": "@secondary-color"
         },
@@ -183,25 +182,20 @@
         "button": {
             "button__bg-color": "@secondary-color",
             "button__bg-color--hover": "@secondary-color",
-            "button__text-color": "#fff",
-            "button__border-color": "@secondary-color"
+            "button__text-color": "#fff"
         },
         "header": {
-            "header__bg-color": "#fff",
-            "header__border-color": "#f8f8f8"
+            "header__bg-color": "#fff"
         },
         "footer": {
-            "footer__bg-color": "#333",
-            "footer__border-color": "#444"
+            "footer__bg-color": "#333"
         },
         "sidebar": {
-            "sidebar__bg-color": "#333",
-            "sidebar__border-color": "#444"
+            "sidebar__bg-color": "#333"
         },
         "navigation": {
             "nav__bg-color": "#f8f8f8",
             "nav__list-bg-color": "#f8f8f8",
-            "nav__border-color": "#f8f8f8",
             "nav__text-color": "#333",
             "nav__text-color--hover": "@primary-color",
             "nav__text-color--selected": "@primary-color",
@@ -217,8 +211,7 @@
             "feature__strapline-bg-color": "@primary-color",
             "feature__button-bg-color": "@primary-color",
             "feature__button-bg-color--hover": "@primary-color",
-            "feature__button-text-color": "#fff",
-            "feature__button-border-color": "@primary-color"
+            "feature__button-text-color": "#fff"
         },
         "forms": {
             "form__bg-color": "#fff",
@@ -292,8 +285,7 @@
             "ecombasket__list-bg-color":"#fff",
             "ecombasket__button-bg-color": "@secondary-color",
             "ecombasket__button-bg-color--hover": "@secondary-color",
-            "ecombasket__button-text-color": "#fff",
-            "ecombasket__button-border-color": "@secondary-color"
+            "ecombasket__button-text-color": "#fff"
         },
         "menu": {
             "menusections__bg-color": "#f8f8f8",
