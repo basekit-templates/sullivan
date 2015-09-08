@@ -159,5 +159,148 @@
             "color": "@color-swatch6",
             "letter-spacing": "inherit"
         }
+    },
+    "styles": {
+        "site": {
+            "site__bg-color": "#fff",
+            "site__content-bg-color": "#fff",
+            "site__border-color": "#eee",
+            "site__link-color": "@secondary-color",
+            "companyname__color:": "@secondary-color"
+        },
+        "typography": {
+            "heading1__text-color": "#333",
+            "heading1__bg-color": "transparent",
+            "heading2__text-color": "#333",
+            "heading2__bg-color": "transparent",
+            "heading3__text-color": "#333",
+            "heading3__bg-color": "transparent",
+            "heading4__text-color": "#333",
+            "heading4__bg-color": "transparent",
+            "paragraph__text-color": "#999",
+            "paragraph__bg-color": "transparent"
+        },
+        "button": {
+            "button__bg-color": "@secondary-color",
+            "button__bg-color--hover": "@secondary-color",
+            "button__text-color": "#fff",
+            "button__border-color": "@secondary-color"
+        },
+        "header": {
+            "header__bg-color": "#fff",
+            "header__border-color": "#f8f8f8"
+        },
+        "footer": {
+            "footer__bg-color": "#333",
+            "footer__border-color": "#444"
+        },
+        "sidebar": {
+            "sidebar__bg-color": "#333",
+            "sidebar__border-color": "#444"
+        },
+        "navigation": {
+            "nav__bg-color": "#f8f8f8",
+            "nav__list-bg-color": "#f8f8f8",
+            "nav__border-color": "#f8f8f8",
+            "nav__text-color": "#333",
+            "nav__text-color--hover": "@primary-color",
+            "nav__text-color--selected": "@primary-color",
+            "nav__item-bg-color": "#fff",
+            "nav__item-bg-color--selected": "#333"
+        },
+        "feature": {
+            "feature__bg-color": "#333",
+            "feature__overlay-bg-color": "#333",
+            "feature__headline-text-color": "@primary-color",
+            "feature__headline-bg-color": "@primary-color",
+            "feature__strapline-text-color": "#fff",
+            "feature__strapline-bg-color": "@primary-color",
+            "feature__button-bg-color": "@primary-color",
+            "feature__button-bg-color--hover": "@primary-color",
+            "feature__button-text-color": "#fff",
+            "feature__button-border-color": "@primary-color"
+        },
+        "forms": {
+            "form__bg-color": "#fff",
+            "form__legend-bg-color": "#eee",
+            "form__legend-text-color": "#333",
+            "form__label-text-color": "#333"
+        },
+        "image": {
+            "image__bg-color": "#fff",
+            "image__overlay-bg-color": "#fff",
+            "image__title-text-color": "#333",
+            "image__description-text-color": "#999"
+        },
+        "gallery": {
+            "gallery__bg-color": "#fff",
+            "gallery__overlay-bg-color": "#fff",
+            "gallery__title-text-color": "#333",
+            "gallery__description-text-color": "#999"
+        },
+        "slideshow": {
+            "slideshow__bg-color": "#fff",
+            "slideshow__overlay-bg-color": "#fff",
+            "slideshow__title-text-color": "#333",
+            "slideshow__description-text-color": "#999",
+            "slideshow__pagination-item-bg-color": "#333",
+            "slideshow__pagination-item-bg-color--selected": "@secondary-color",
+            "slideshow__pagination-item-text-color": "#fff"
+        },
+        "twitter": {
+            "twitter__bg-color": "#f8f8f8",
+            "twitter__item-bg-color": "#fff",
+            "twitter__accountname-color": "@secondary-color"
+        },
+        "socialicons": {
+            "socialicons__icon-bg-color": "@secondary-color",
+            "socialicons__text-color": "@secondary-color"
+        },
+        "blog": {
+            "blogsearch__bg-color": "#f8f8f8",
+            "blogsearch__legend-bg-color": "#eee",
+            "blogsearch__legend-text-color": "#333",
+            "blogsearch__label-text-color": "#333",
+            "blogpostlist__bg-color": "#f8f8f8",
+            "blogpostlist__article-bg-color": "#fff",
+            "blogpostlist__title-bg-color": "@primary-color",
+            "blogpostlist__title-text-color": "#fff",
+            "blogpost__bg-color": "#f8f8f8",
+            "blogpost__article-bg-color": "#fff",
+            "blogpost__title-bg-color": "@primary-color",
+            "blogpost__title-text-color": "#fff"
+        },
+        "ecommerce": {
+            "ecomproductslist__bg-color": "#fff",
+            "ecomproductslist__filters-bg-color": "#f8f8f8",
+            "ecomproductslist__filters-legend-bg-color": "#eee",
+            "ecomproductslist__filters-legend-text-color": "#333",
+            "ecomproductslist__filters-label-text-color": "#333",
+
+            "ecomproductslist__product-list-bg-color": "#f8f8f8",
+            "ecomproductslist__product-item-bg-color": "#fff",
+            "ecomproductslist__product-item-title-bg-color": "@primary-color",
+            "ecomproductslist__product-item-title-text-color": "#fff",
+            "ecomproduct__bg-color": "#f8f8f8",
+            "ecomproduct__product-images-bg-color": "#fff",
+            "ecomproduct__product-content-bg-color": "#fff",
+            "ecomproduct__title-bg-color": "@primary-color",
+            "ecomproduct__title-text-color": "#fff",
+            "ecomproduct__price-bg-color": "#333",
+            "ecomproduct__price-text-color": "#fff",
+            "ecombasket__bg-color": "#f8f8f8",
+            "ecombasket__list-bg-color":"#fff",
+            "ecombasket__button-bg-color": "@secondary-color",
+            "ecombasket__button-bg-color--hover": "@secondary-color",
+            "ecombasket__button-text-color": "#fff",
+            "ecombasket__button-border-color": "@secondary-color"
+        },
+        "menu": {
+            "menusections__bg-color": "#f8f8f8",
+            "menu__bg-color": "#f8f8f8",
+            "menu__item-bg-color": "#fff",
+            "menu__section-header-bg-color": "#fff",
+            "menu__section-featured-bg-color": "#f8f8f8"
+        }
     }
 }
