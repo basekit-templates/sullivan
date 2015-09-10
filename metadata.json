@@ -161,8 +161,6 @@
         }
     },
     "styles": {
-
-
         "colors": {
             "color__primary": "@color-swatch1",
             "color__secondary": "@color-swatch4"
@@ -261,53 +259,50 @@
             "color__socialicons--icon--background": "@secondary-color",
             "color__socialicons--text": "@secondary-color"
         },
-
-
-
         "blog": {
-            "blogsearch__bg-color": "#f8f8f8",
-            "blogsearch__legend-bg-color": "#eee",
-            "blogsearch__legend-text-color": "#333",
-            "blogsearch__label-text-color": "#333",
-            "blogpostlist__bg-color": "#f8f8f8",
-            "blogpostlist__article-bg-color": "#fff",
-            "blogpostlist__title-bg-color": "@primary-color",
-            "blogpostlist__title-text-color": "#fff",
-            "blogpost__bg-color": "#f8f8f8",
-            "blogpost__article-bg-color": "#fff",
-            "blogpost__title-bg-color": "@primary-color",
-            "blogpost__title-text-color": "#fff"
+	        "color__blogsearch--background": "#f8f8f8",
+	        "color__blogsearch-legend--background": "#eee",
+	        "color__blogsearch-legend--text": "#333",
+	        "color__blogsearch-label--text": "#333",
+	        "color__blogpostlist--background": "#333",
+	        "color__blogpostlist-article--background": "#333",
+	        "color__blogpostlist-title--background": "@primary-color",
+	        "color__blogpostlist-title--text": "#fff",
+	        "color__blogpostlist-title--text": "#fff",
+	        "color__blogpost--background": "#f8f8f8",
+	        "color__blogpost-article--background": "#f8f8f8",
+	        "color__blogpost-title--background": "#f8f8f8",
+	        "color__blogpost-title--text": "#f8f8f8"
         },
         "ecommerce": {
-            "ecomproductslist__bg-color": "#fff",
-            "ecomproductslist__filters-bg-color": "#f8f8f8",
-            "ecomproductslist__filters-legend-bg-color": "#eee",
-            "ecomproductslist__filters-legend-text-color": "#333",
-            "ecomproductslist__filters-label-text-color": "#333",
-
-            "ecomproductslist__product-list-bg-color": "#f8f8f8",
-            "ecomproductslist__product-item-bg-color": "#fff",
-            "ecomproductslist__product-item-title-bg-color": "@primary-color",
-            "ecomproductslist__product-item-title-text-color": "#fff",
-            "ecomproduct__bg-color": "#f8f8f8",
-            "ecomproduct__product-images-bg-color": "#fff",
-            "ecomproduct__product-content-bg-color": "#fff",
-            "ecomproduct__title-bg-color": "@primary-color",
-            "ecomproduct__title-text-color": "#fff",
-            "ecomproduct__price-bg-color": "#333",
-            "ecomproduct__price-text-color": "#fff",
-            "ecombasket__bg-color": "#f8f8f8",
-            "ecombasket__list-bg-color":"#fff",
-            "ecombasket__button-bg-color": "@secondary-color",
-            "ecombasket__button-bg-color--hover": "@secondary-color",
-            "ecombasket__button-text-color": "#fff"
+	        "color__ecomproductslist--background": "#f8f8f8",
+	        "color__ecomproductslist-filters--background": "#f8f8f8",
+	        "color__ecomproductslist-legend--background": "#f8f8f8",
+	        "color__ecomproductslist-legend--text": "#f8f8f8",
+	        "color__ecomproductslist-label--text": "#f8f8f8",
+	        "color__ecomproductslist-product-list--background": "#f8f8f8",
+	        "color__ecomproductslist-product-item--background": "#f8f8f8",
+	        "color__ecomproductslist-product-title--background": "#f8f8f8",
+	        "color__ecomproductslist-product-title--text": "#f8f8f8",
+	        "color__ecomproduct--background": "#f8f8f8",
+	        "color__ecomproduct-images--background": "#f8f8f8",
+	        "color__ecomproduct-content--background": "#f8f8f8",
+	        "color__ecomproduct-title--background": "#f8f8f8",
+	        "color__ecomproduct-title--text": "#f8f8f8",
+	        "color__ecomproduct-price--background": "#f8f8f8",
+	        "color__ecomproduct-price--text": "#f8f8f8",
+	        "color__ecombasket--background": "#f8f8f8",
+	        "color__ecombasket-list--background": "#f8f8f8",
+	        "color__ecombasket-button--background": "#f8f8f8",
+	        "color__ecombasket-button--background--hover": "#f8f8f8",
+	        "color__ecombasket-button--text": "#f8f8f8"
         },
         "menu": {
-            "menusections__bg-color": "#f8f8f8",
-            "menu__bg-color": "#f8f8f8",
-            "menu__item-bg-color": "#fff",
-            "menu__section-header-bg-color": "#fff",
-            "menu__section-featured-bg-color": "#f8f8f8"
+	        "color__menusections--background": "#f8f8f8",
+	        "color__menu--background": "#f8f8f8",
+	        "color__menu-item--background": "#f8f8f8",
+	        "color__menu-section-header--background": "#f8f8f8",
+	        "color__menu-section-featured--background": "#f8f8f8"
         }
     }
 }
