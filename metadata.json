@@ -171,7 +171,7 @@
         },
         "site": {
             "color__body--background": "#fff",
-            "color__content--background": "#fff",
+            "color__container--background": "#fff",
             "color__link--text": "@secondary-color",
             "color__companyname--text": "@secondary-color"
         },
