@@ -19,7 +19,7 @@
 @color__h3--background: transparent;
 @color__h4--text: @color-swatch4;
 @color__h4--background: transparent;
-@color__p--text: @color-swatch4;
+@color__p--text: @color-swatch5;
 @color__p--background: transparent;
 
 // button
@@ -60,26 +60,26 @@
 @color__form--background: transparent;
 @color__form-legend--text: @color-swatch4;
 @color__form-legend--background: transparent;
-@color__form-label--text: @color-swatch4;
+@color__form-label--text: @color-swatch5;
 
 // image
 @color__image--background: transparent;
-@color__image-caption--background: @color-swatch6;
+@color__image-caption--background: lighten(@color__secondary, 5%);
 @color__image-title--text: @color-swatch4;
 @color__image-description--text: @color-swatch4;
 
 // gallery
-@color__gallery--background: @color-swatch6;
-@color__gallery-caption--background: @color-swatch4;
-@color__gallery-title--text: @color-swatch6;
-@color__gallery-description--text: @color-swatch6;
+@color__gallery--background: lighten(@color__secondary, 5%);
+@color__gallery-caption--background: @color-swatch5;
+@color__gallery-title--text: lighten(@color__secondary, 30%);
+@color__gallery-description--text: lighten(@color__secondary, 30%);
 
 // slideshow
 @color__slideshow--background: transparent;
-@color__slideshow-caption--background: @color-swatch4;
-@color__slideshow-title--text: @color-swatch6;
-@color__slideshow-description--text: @color-swatch6;
-@color__slideshow-pagination-item--background: @color-swatch4;
+@color__slideshow-caption--background: @color-swatch5;
+@color__slideshow-title--text: lighten(@color__secondary, 30%);
+@color__slideshow-description--text: lighten(@color__secondary, 30%);
+@color__slideshow-pagination-item--background: fadeout(darken(@color-swatch5, 30%), 30%);
 @color__slideshow-pagination-item--background--selected: @color__secondary;
 @color__slideshow-pagination-item--text: @color-swatch6;
 
@@ -118,12 +118,12 @@
 @color__ecomproductslist-product-title--background: transparent;
 @color__ecomproductslist-product-title--text: @color__primary;
 @color__ecomproduct--background: transparent;
-@color__ecomproduct-images--background: lighten(@color__secondary, 5%);
+@color__ecomproduct-images--background: darken(@color__secondary,5%)s;
 @color__ecomproduct-content--background: transparent;
 @color__ecomproduct-title--background: transparent;
 @color__ecomproduct-title--text: @color-swatch4;
 @color__ecomproduct-price--background: transparent;
-@color__ecomproduct-price--text: @color__primary;
+@color__ecomproduct-price--text: @color-swatch4;
 @color__ecombasket--background: transparent;
 @color__ecombasket-list--background: transparent;
 @color__ecombasket-button--background: @color__primary;
@@ -133,7 +133,7 @@
 // menu
 @color__menusections--background: transparent;
 @color__menu--background: transparent;
-@color__menu-item--background: lighten(@color__secondary, 5%);
+@color__menu-item--background: @color__secondary;
 @color__menu-section-header--background: transparent;
 @color__menu-section-featured--background: @color-swatch2;
 
@@ -269,7 +269,7 @@ form,
 .gallery {
 	background-color: @color__gallery--background;
 	&__caption.caption {
-		background-color: @color__gallery-caption--background;
+		.gradient(fadeout(@color__gallery-caption--background, 100%), fadeout(@color__gallery-caption--background, 0%));
 	}
 	&__image-title.image-title {
 		color: @color__gallery-title--text;
@@ -282,7 +282,7 @@ form,
 .responsiveslideshow {
 	background-color: @color__slideshow--background;
 	&__caption.caption {
-		background-color: @color__slideshow-caption--background;
+		.gradient(fadeout(@color__slideshow-caption--background, 100%), fadeout(@color__slideshow-caption--background, 0%));
 	}
 	&__image-title.image-title {
 		color: @color__slideshow-title--text;
@@ -369,7 +369,6 @@ form,
 	&__product-item {
 		background-color: @color__ecomproductslist-product-item--background;
 	}
-	&__product-item-title,
 	&__product-item-title a {
 		background-color: @color__ecomproductslist-product-title--background;
 		color: @color__ecomproductslist-product-title--text;
@@ -415,14 +414,12 @@ form,
 .menu {
 	background-color: @color__menu--background;
 	.menu-item {
-		.item-image .image-link,
-		.item-content {
-			background-color: @color__menu-item--background;
+		.item-image .image-link {
+			background-color: lighten(@color__menu-item--background, 3%);
 		}
 		&--featured {
-			.item-image .image-link,
-			.item-content {
-				background-color: @color__menu-section-featured--background;
+			.item-image .image-link {
+				background-color: lighten(@color__menu-section-featured--background, 2%);
 			}
 		}
 	}
