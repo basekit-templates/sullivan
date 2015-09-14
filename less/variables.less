@@ -1,0 +1,426 @@
+// Metadata variables
+
+// colors
+@color__primary: @color-swatch3;
+@color__secondary: @color-swatch1;
+
+// site
+@color__body--background: @color__secondary;
+@color__container--background: @color__secondary;
+@color__link--text: @color__primary;
+@color__companyname--text: @color-swatch6;
+
+// typography
+@color__h1--text: @color-swatch4;
+@color__h1--background: transparent;
+@color__h2--text: @color-swatch4;
+@color__h2--background: transparent;
+@color__h3--text: @color-swatch4;
+@color__h3--background: transparent;
+@color__h4--text: @color-swatch4;
+@color__h4--background: transparent;
+@color__p--text: @color-swatch5;
+@color__p--background: transparent;
+
+// button
+@color__button--background: @color__primary;
+@color__button--background--hover: darken(@color__primary, 10%);
+@color__button--text: @color-swatch6;
+
+// header
+@color__header--background: @color-swatch7;
+
+// footer
+@color__footer--background: @color__secondary;
+
+// sidebar
+@color__sidebar--background: @color-swatch2;
+
+// navigation
+@color__navigation--background: @color-swatch7;
+@color__navigation--text: @color-swatch4;
+@color__navigation--text--hover: @color__primary;
+@color__navigation--text--selected: @color__primary;
+@color__navigation-list--background: @color-swatch7;
+@color__navigation-item--text: #f8f8f8;
+@color__navigation-item--selected: #f8f8f8;
+
+// feature
+@color__feature--background: @color-swatch4;
+@color__feature-content--background: transparent;
+@color__feature-headline--text: @color-swatch6;
+@color__feature-headline--background: transparent;
+@color__feature-strapline--text: @color-swatch6;
+@color__feature-strapline--background: transparent;
+@color__feature-button--text: @color-swatch6;
+@color__feature-button--background: @color__primary;
+@color__feature-button--background--hover: darken(@color__primary, 10%);
+
+// forms
+@color__form--background: transparent;
+@color__form-legend--text: @color-swatch4;
+@color__form-legend--background: transparent;
+@color__form-label--text: @color-swatch5;
+
+// image
+@color__image--background: transparent;
+@color__image-caption--background: lighten(@color__secondary, 5%);
+@color__image-title--text: @color-swatch4;
+@color__image-description--text: @color-swatch4;
+
+// gallery
+@color__gallery--background: lighten(@color__secondary, 5%);
+@color__gallery-caption--background: @color-swatch5;
+@color__gallery-title--text: lighten(@color__secondary, 30%);
+@color__gallery-description--text: lighten(@color__secondary, 30%);
+
+// slideshow
+@color__slideshow--background: transparent;
+@color__slideshow-caption--background: @color-swatch5;
+@color__slideshow-title--text: lighten(@color__secondary, 30%);
+@color__slideshow-description--text: lighten(@color__secondary, 30%);
+@color__slideshow-pagination-item--background: fadeout(darken(@color-swatch5, 30%), 30%);
+@color__slideshow-pagination-item--background--selected: @color__secondary;
+@color__slideshow-pagination-item--text: @color-swatch6;
+
+// twitter
+@color__twitter--background: transparent;
+@color__twitter-item--background: transparent;
+@color__twitter-account-name--background: @color__primary;
+
+// socialicons
+@color__socialicons--icon: @color__primary;
+@color__socialicons--icon--background: transparent;
+@color__socialicons--text: @color__secondary;
+
+// blog
+@color__blogsearch--background: transparent;
+@color__blogsearch-legend--background: transparent;
+@color__blogsearch-legend--text: @color-swatch4;
+@color__blogsearch-label--text: @color-swatch4;
+@color__blogpostlist--background: transparent;
+@color__blogpostlist-article--background: transparent;
+@color__blogpostlist-title--background: transparent;
+@color__blogpostlist-title--text: @color__primary;
+@color__blogpost--background: transparent;
+@color__blogpost-article--background: transparent;
+@color__blogpost-title--background: transparent;
+@color__blogpost-title--text: @color-swatch4;
+
+// ecommerce
+@color__ecomproductslist--background: transparent;
+@color__ecomproductslist-filters--background: transparent;
+@color__ecomproductslist-legend--background: transparent;
+@color__ecomproductslist-legend--text: @color-swatch4;
+@color__ecomproductslist-label--text: @color-swatch4;
+@color__ecomproductslist-product-list--background: transparent;
+@color__ecomproductslist-product-item--background: transparent;
+@color__ecomproductslist-product-title--background: transparent;
+@color__ecomproductslist-product-title--text: @color__primary;
+@color__ecomproduct--background: transparent;
+@color__ecomproduct-images--background: darken(@color__secondary,5%)s;
+@color__ecomproduct-content--background: transparent;
+@color__ecomproduct-title--background: transparent;
+@color__ecomproduct-title--text: @color-swatch4;
+@color__ecomproduct-price--background: transparent;
+@color__ecomproduct-price--text: @color-swatch4;
+@color__ecombasket--background: transparent;
+@color__ecombasket-list--background: transparent;
+@color__ecombasket-button--background: @color__primary;
+@color__ecombasket-button--background--hover: darken(@color__primary, 10%);
+@color__ecombasket-button--text: @color-swatch6;
+
+// menu
+@color__menusections--background: transparent;
+@color__menu--background: transparent;
+@color__menu-item--background: @color__secondary;
+@color__menu-section-header--background: transparent;
+@color__menu-section-featured--background: @color-swatch2;
+
+
+// Template colour overrides
+body {
+	background-color: @color__body--background;
+}
+
+.template-content {
+	background-color: @color__container--background;
+}
+
+.company-link {
+	color: @color__companyname--text;
+}
+
+a {
+	color: @color__link--text;
+}
+
+h1 {
+	color: @color__h1--text;
+	background-color: @color__h1--background;
+}
+
+h2 {
+	color: @color__h2--text;
+	background-color: @color__h2--background;
+}
+
+h3 {
+	color: @color__h3--text;
+	background-color: @color__h3--background;
+}
+
+h4 {
+	color: @color__h4--text;
+	background-color: @color__h4--background;
+}
+
+p {
+	color: @color__p--text;
+	background-color: @color__p--background;
+}
+
+button,
+.button {
+	background-color: @color__button--background;
+	color: @color__button--text;
+	&:hover {
+		background-color: @color__button--background--hover;
+	}
+}
+
+.template-header {
+	background-color: @color__header--background;
+}
+
+.template-footer {
+	background-color: @color__footer--background;
+}
+
+#page-zones__template-widgets__image-sidebarimage {
+	background-color: @color__sidebar--background;
+}
+
+.extendednavigation {
+	background-color: @color__navigation--background;
+	&__navigation-body {
+		background-color: @color__navigation-list--background;
+	}
+	&__item-name.item-name {
+		color: @color__navigation-item--text;
+		&:hover {
+			color: @color__navigation-item--selected;
+		}
+	}
+	&__navigation-item.selected {
+		color: @color__navigation-item--selected;
+	}
+}
+
+.feature {
+	background-color: @color__feature--background;
+	&__content-wrap {
+		background-color: @color__feature-content--background;
+	}
+	&__headline {
+		background-color: @color__feature-headline--background;
+		color: @color__feature-headline--text;
+	}
+	&__strapline {
+		background-color: @color__feature-strapline--background;
+		color: @color__feature-strapline--text;
+	}
+	&__button {
+		background-color: @color__feature-button--background;
+		color: @color__feature-button--text;
+		&:hover {
+			background-color: @color__feature-button--background--hover;
+		}
+	}
+}
+
+form,
+.form {
+	background-color: @color__form--background;
+	legend,
+	.legend {
+		background-color: @color__form-legend--background;
+		color: @color__form-legend--text;
+	}
+	label,
+	.label {
+		color: @color__form-label--text;
+	}
+}
+
+.imagewidget {
+	background-color: @color__image--background;
+	&__caption {
+		background-color: @color__image-caption--background;
+	}
+	&__image-title {
+		color: @color__image-title--text;
+	}
+	&__image-description {
+		color: @color__image-description--text;
+	}
+}
+
+.gallery {
+	background-color: @color__gallery--background;
+	&__caption.caption {
+		.gradient(fadeout(@color__gallery-caption--background, 100%), fadeout(@color__gallery-caption--background, 0%));
+	}
+	&__image-title.image-title {
+		color: @color__gallery-title--text;
+	}
+	&__image-description.image-description {
+		color: @color__gallery-description--text;
+	}
+}
+
+.responsiveslideshow {
+	background-color: @color__slideshow--background;
+	&__caption.caption {
+		.gradient(fadeout(@color__slideshow-caption--background, 100%), fadeout(@color__slideshow-caption--background, 0%));
+	}
+	&__image-title.image-title {
+		color: @color__slideshow-title--text;
+	}
+	&__image-description.image-description {
+		color: @color__slideshow-description--text;
+	}
+	.button--pagination {
+		background-color: @color__slideshow-pagination-item--background;
+		color: @color__slideshow-pagination-item--background--selected;
+	}
+	.selected .button--pagination {
+		background-color: @slideshow__pagination-item-bg-color--selected;
+	}
+}
+
+.twitter {
+	background-color: @color__twitter--background;
+	&__tweet-item {
+		background-color: @color__twitter-item--background;
+	}
+	&__account-link {
+		color: @color__twitter-account-name--background;
+	}
+}
+
+.socialicons {
+	&__social-link {
+		background-color: @color__socialicons--icon--background;
+		&::before {
+			color: @color__socialicons--icon;
+		}
+	}
+}
+
+.blogsearch {
+	background-color: @color__blogsearch--background;
+	&__legend.legend {
+		background-color: @color__blogsearch-legend--background;
+		color: @color__blogsearch-legend--text;
+	}
+	&__label.label {
+		color: @color__blogsearch-label--text;
+	}
+}
+
+.blogpostlist {
+	background-color: @color__blogpostlist--background;
+	&__post-article {
+		background-color: @color__blogpostlist-article--background;
+	}
+	&__title-link {
+		background-color: @color__blogpostlist-title--background;
+		color: @color__blogpostlist-title--text;
+	}
+}
+
+.blogpost {
+	background-color:  @color__blogpost--background;
+	&__post-article {
+		background-color: @color__blogpost-article--background;
+	}
+	&__post-title {
+		background-color: @color__blogpost-title--background;
+		color: @color__blogpost-title--text;
+	}
+}
+
+.ecomproductslist {
+	background-color: @color__ecomproductslist--background;
+	&__product-filters {
+		background-color: @color__ecomproductslist-filters--background;
+	}
+	&__legend.legend {
+		background-color: @color__ecomproductslist-legend--background;
+		color: @color__ecomproductslist-legend--text;
+	}
+	&__label.label {
+		color: @color__ecomproductslist-label--text;
+	}
+	&__product-list {
+		background-color: @color__ecomproductslist-product-list--background;
+	}
+	&__product-item {
+		background-color: @color__ecomproductslist-product-item--background;
+	}
+	&__product-item-title a {
+		background-color: @color__ecomproductslist-product-title--background;
+		color: @color__ecomproductslist-product-title--text;
+	}
+}
+
+.ecomproduct {
+	background-color: @color__ecomproduct--background;
+	&__image-link.image-link,
+	&__gallery-item.gallery-item {
+		background-color: @color__ecomproduct-images--background;
+	}
+	&__product-content {
+		background-color: @color__ecomproduct-content--background;
+	}
+	&__product-title {
+		background-color: @color__ecomproduct-title--background;
+		color: @color__ecomproduct-title--text;
+	}
+	&__product-price {
+		background-color: @color__ecomproduct-price--background;
+		color: @color__ecomproduct-price--text;
+	}
+}
+.ecombasket {
+	background-color: @color__ecombasket--background;
+	&__basket-list {
+		background-color: @color__ecombasket-list--background;
+	}
+	button.button {
+		background-color: @color__ecombasket-button--background;
+		color: @color__ecombasket-button--text;
+		&:hover {
+			background-color: @color__ecombasket-button--background--hover;
+		}
+	}
+}
+
+.menusections {
+	background-color: @color__menusections--background;
+}
+
+.menu {
+	background-color: @color__menu--background;
+	.menu-item {
+		.item-image .image-link {
+			background-color: lighten(@color__menu-item--background, 3%);
+		}
+		&--featured {
+			.item-image .image-link {
+				background-color: lighten(@color__menu-section-featured--background, 2%);
+			}
+		}
+	}
+}
