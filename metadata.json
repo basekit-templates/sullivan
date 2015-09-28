@@ -241,7 +241,7 @@
             "color__slideshow-title--text": "lighten(@color-swatch1, 30%)",
             "color__slideshow-description--text": "lighten(@color-swatch1, 30%)",
             "color__slideshow-pagination-item--background": "fadeout(darken(@color-swatch5, 30%), 30%)",
-            "color__slideshow-pagination-item--background--selected": "@color__secondary",
+            "color__slideshow-pagination-item--background--selected": "@color__primary",
             "color__slideshow-pagination-item--text": "@color-swatch6"
         },
         "twitter": {

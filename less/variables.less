@@ -80,7 +80,7 @@
 @color__slideshow-title--text: lighten(@color__secondary, 30%);
 @color__slideshow-description--text: lighten(@color__secondary, 30%);
 @color__slideshow-pagination-item--background: fadeout(darken(@color-swatch5, 30%), 30%);
-@color__slideshow-pagination-item--background--selected: @color__secondary;
+@color__slideshow-pagination-item--background--selected: @color__primary;
 @color__slideshow-pagination-item--text: @color-swatch6;
 
 // twitter
@@ -290,12 +290,15 @@ form,
 	&__image-description.image-description {
 		color: @color__slideshow-description--text;
 	}
-	.button--pagination {
+	.pagination-item button.button--pagination {
 		background-color: @color__slideshow-pagination-item--background;
-		color: @color__slideshow-pagination-item--background--selected;
+		color: @color__slideshow-pagination-item--background;
+		&:hover {
+			background-color: darken(@color__slideshow-pagination-item--background, 20%);
+		}
 	}
-	.selected .button--pagination {
-		background-color: @slideshow__pagination-item-bg-color--selected;
+	.pagination-item.selected button.button--pagination {
+		background-color: @color__slideshow-pagination-item--background--selected;
 	}
 }
 
