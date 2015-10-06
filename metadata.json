@@ -207,7 +207,7 @@
             "color__feature-button--background": "@font-swatch7-background-color",
             "color__feature-button--background--hover": "@font-swatch7-background-color-hover"
         },
-        "forms": {
+        "form": {
             "color__form-legend--text": "@font-swatch2-color",
             "color__form-label--text": "@font-swatch5-color"
         },
@@ -251,8 +251,7 @@
             "color__ecombasket-button--text": "@font-swatch7-color"
         },
         "menu": {
-            "color__menu-item--background": "lighten(@color-swatch1, 5%)",
-            "color__menu-section-featured--background": "darken(@color-swatch1,5%)"
+            "color__menu-item--background": "lighten(@color-swatch1, 5%)"
         }
     }
 }
