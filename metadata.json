@@ -183,13 +183,13 @@
             "color__button--text": "@font-swatch7-color"
         },
         "header": {
-            "color__header--background": "@color-swatch7"
+            "color__header--background": "@color__primary"
         },
         "footer": {
             "color__footer--background": "@color-swatch1"
         },
         "sidebar": {
-            "color__sidebar--background": "@color-swatch2"
+            "color__sidebar--background": "@color__secondary"
         },
         "navigation": {
             "color__navigation--background": "@font-swatch6-background-color",
